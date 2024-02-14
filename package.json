@@ -1,0 +1,32 @@
+{
+  "name": "gym",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "prisma": "4.10.1",
+    "tsup": "6.6.3",
+    "tsx": "3.12.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "4.10.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "16.0.3",
+    "fastify": "4.13.0",
+    "zod": "^3.22.4"
+  }
+}
